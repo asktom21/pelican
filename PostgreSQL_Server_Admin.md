@@ -695,11 +695,11 @@ DATE=$(date +%Y%m%d)
 find /home/postgres/backup_rds_dump -name 'appdb.*.dump' -mtime +8 -exec rm {} \; -print > /dev/null
 
 # backup command (plain text):
-pg_dump -h icheckdb.cluster-ct1dr3c2qztg.ap-northeast-2.rds.amazonaws.com -d appdb -U postgres -f /home/postgres/backup_rds_dump/appdb.$(date +%Y%m%d).dump
+pg_dump -h db_name.cluster-ct1dr3c2qztg.ap-northeast-2.rds.amazonaws.com -d appdb -U postgres -f /home/postgres/backup_rds_dump/appdb.$(date +%Y%m%d).dump
 # restore command: psql -f appdb.$(date +%Y%m%d).dump -h localhost -d appdb -U postgres
 
 # backup command (custom format):
-pg_dump -h icheckdb.cluster-ct1dr3c2qztg.ap-northeast-2.rds.amazonaws.com -d appdb -U postgres -Fc -f /home/postgres/backup_rds_dump/appdb.$(date +%Y%m%d).Fc.dump
+pg_dump -h db_name.cluster-ct1dr3c2qztg.ap-northeast-2.rds.amazonaws.com -d appdb -U postgres -Fc -f /home/postgres/backup_rds_dump/appdb.$(date +%Y%m%d).Fc.dump
 # restore command: pg_restore -v -h localhost -U postgres -d appdb appdb.$(date +%Y%m%d).Fc.dump
 ```  
 $ `ls -ltr`  
