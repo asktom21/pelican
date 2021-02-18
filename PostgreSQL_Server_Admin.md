@@ -249,19 +249,19 @@ postgres 11622 11609  0 14:58 ?        00:00:00 postgres: walwriter
 postgres 11623 11609  0 14:58 ?        00:00:00 postgres: autovacuum launcher
 postgres 11624 11609  0 14:58 ?        00:00:00 postgres: stats collector
 postgres 11625 11609  0 14:58 ?        00:00:00 postgres: logical replication launcher
-```
+```  
 
 ### 1.4. PostgreSQL 관리 사용자 비밀번호 설정  
-
+  
 ✔︎ DB 작업에 대한 권한을 에스컬레이션하는 데 사용할 PostgreSQL 관리자 비밀번호를 설정합니다.  
-
+  
 `$ sudo su - postgres`  
 `$ psql -c "alter user postgres with password 'StrongPassword'"`
 ```
 ALTER ROLE
 ```  
 
-## 2. 서버 구성
+## 2. 서버 구성  
 
 ### 2.1. CLI PATH 설정  
 
@@ -271,7 +271,7 @@ ALTER ROLE
 ```
 bash: pg_ctl: command not found
 ```
-`$ cd ~`
+`$ cd ~`  
 `$ pwd`
 ```
 /var/lib/pgsql
