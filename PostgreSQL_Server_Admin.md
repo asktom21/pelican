@@ -27,7 +27,8 @@ Resolving Dependencies
 
 Dependencies Resolved
 
-======================================================================== Package               Arch       Version         Repository        Size
+========================================================================  
+Package               Arch       Version         Repository        Size
 ========================================================================
 Installing:
  ...
@@ -1533,6 +1534,7 @@ bucket.delete()
 ```  
 ✔︎ [참고: AWS 리전별 제공 서비스 목록과 엔드포인트 쉽게 가져오는 방법](https://aws.amazon.com/ko/blogs/korea/new-query-for-aws-regions-endpoints-and-more-using-aws-systems-manager-parameter-store/)  
 
+```
 Pelican
 
 C:\Users\askto>pip install virtualenv
@@ -1615,3 +1617,4 @@ Done. Your new project is available at C:\Python\asktom21\pelican
 C:\Python\asktom21\pelican>explorer .
 
 C:\Python\asktom21\pelican>
+```
