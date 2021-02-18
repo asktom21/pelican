@@ -359,10 +359,10 @@ listen_addresses = '*'           # what IP address(es) to listen on;
 ...
 ...
 ```
-`$ sudo systemctl stop postgresql-12`
+`$ sudo systemctl stop postgresql-12`  
 `$ sudo systemctl start postgresql-12`
 
-#### STEP 3: DB사용자 접근제어
+#### 2.2.3. DB사용자 접근제어
 
 ✔︎ 원격 접속 요청을 시도하는 컴퓨터가 해당 IP나 IP Block으로 서버 접근을 허용 받았다면, 허용된 인증 방식으로 접속 시도를 하는지 체크합니다. 허용된 인증 방식 이외에는 DB 접속 오류 현상이 발생합니다.  
 
