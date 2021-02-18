@@ -466,7 +466,7 @@ postgres=# show search_path;
 
 ![](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2019/03/01/managing-postgresql-users-1.gif)  
 
-* master 사용자로 응용 프로그램 또는 사용 사례별로 역할 생성. 예) readonly, readwrite  
+* master 사용자로 응용프로그램 또는 사용 유형에 따라 역할 생성. 예) readonly, readwrite  
 * 역할에 다양한 데이터베이스 개체에 액세스 할 수 있는 권한을 추가. 예) readonly역할은 SELECT 권한만 부여  
 * 역할에는 필요한 최소한의 권한을 부여  
 * 응용 프로그램 또는 고유한 기능에 따라 사용자 생성. 예) app_user, reporting_user.  
