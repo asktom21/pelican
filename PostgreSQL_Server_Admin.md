@@ -74,7 +74,8 @@ Complete!
   6  postgresql10=latest      enabled      [ =10  =stable ]
  41  postgresql11             available    [ =11  =stable ]
 ```
-✔︎ PostgreSQL v9.x는 "`sudo yum install -y postgresql`"로 설치가 되나, v10.x 이상은 Yum Repository를 먼저 설치하고 PostgreSQL을 설치해야 한다. Amazon Linux 2 서버에 공식 PostgreSQL 리포지토리를 추가하려면 sudo 권한이 있는 루트 또는 사용자 계정으로 다음 명령을 실행합니다.
+✔︎ PostgreSQL v9.x는 "`sudo yum install -y postgresql`"로 설치가 되나, v10.x 이상은 Yum Repository를 먼저 설치하고 PostgreSQL을 설치해야 한다.   
+✔︎ Amazon Linux 2 서버에 공식 PostgreSQL 리포지토리를 추가하려면 sudo 권한이 있는 루트 또는 사용자 계정으로 다음 명령을 실행합니다.
 
 `$ sudo tee /etc/yum.repos.d/pgdg.repo<<EOF`  
 `> [pgdg12]`  
